@@ -29,3 +29,25 @@ print(y!=x)
 print( x>5 and y<25)
 print(x>15 or y<25) 
 print(not(x>5))
+
+ass= input("Enter your assignment:")
+if len(ass) >= 30:
+    print("Ass can be submitted ")
+else:
+    print("Ass cannot be submitted ") 
+
+
+user= input("Enter your name :")
+import random
+
+otp = random.randint(1000, 9999)
+print("Your OTP is:", otp)
+user=int(input("enter your otp:"))
+print("Available rooms: 101, 102, 103, 104, 105, 106")
+room = int(input("Choose your room number: "))
+if room in [101, 102, 103, 104, 105, 106]:
+    print("Welcome", name,)
+    print("Your room number", room, "is booked successfully.")
+else:
+    print("Invalid room number. Please choose from given options.")
+
